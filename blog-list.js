@@ -19,6 +19,12 @@ const blogData = {
             date: "February 28, 2025",
             link: "blog.html#post-003"
         }
+        {
+            number: "004",
+            title: "Et plus si affinité: et Hop !",
+            date: "March 13, 2025",
+            link: "blog.html#post-004"
+        }
     ],
     music: [
         {
