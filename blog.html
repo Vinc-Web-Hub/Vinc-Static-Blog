@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Blog-specific styles */
+        .blog-container {
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        
+        .blog-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-align: center;
+            letter-spacing: -1px;
+        }
+        
+        .blog-post {
+            margin-bottom: 50px;
+            background-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+        
+        .post-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 24px;
+            background-color: #f5f5f7;
+            border-bottom: 1px solid #e5e5e7;
+        }
+        
+        .post-header-left {
+            display: flex;
+            align-items: center;
+        }
+        
+        .post-number {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #007aff;
+            margin-right: 15px;
+        }
+        
+        .post-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+        
+        .post-date {
+            font-size: 0.9rem;
+            color: #86868b;
+        }
+        
+        .post-content {
+            padding: 24px;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .post-content p {
+            margin-bottom: 16px;
+        }
+        
+        .post-content p:last-child {
+            margin-bottom: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .blog-container {
+                padding: 20px;
+            }
+            
+            .post-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .post-date {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <nav>
+            <div class="logo">Your Logo</div>
+            <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="blog-container">
+            <h1 class="blog-title">Our Blog</h1>
+            
+            <!-- Blog Post 1 -->
+            <div class="blog-post">
+                <div class="post-header">
+                    <div class="post-header-left">
+                        <span class="post-number">#001</span>
+                        <h2 class="post-title">Getting Started with Minimalist Design</h2>
+                    </div>
+                    <span class="post-date">March 14, 2025</span>
+                </div>
+                <div class="post-content">
+                    <p>Minimalist design continues to dominate digital interfaces in 2025. The philosophy behind minimalism is straightforward: reduce elements to only what's necessary, creating a clean and focused user experience.</p>
+                    <p>When implementing minimalist design, focus on three key principles:</p>
+                    <p>First, embrace white space. Proper spacing between elements creates visual hierarchy and improves readability. Second, limit your color palette to create cohesion. A minimalist design typically features 2-3 primary colors with occasional accent colors for emphasis. Finally, typography matters—choose clean, readable fonts and maintain consistent sizing throughout your interface.</p>
+                    <p>Remember that minimalism isn't about removing elements until your design is empty—it's about thoughtfully considering each component's purpose and keeping only what serves your users.</p>
+                </div>
+            </div>
+            
+            <!-- Blog Post 2 -->
+            <div class="blog-post">
+                <div class="post-header">
+                    <div class="post-header-left">
+                        <span class="post-number">#002</span>
+                        <h2 class="post-title">The Impact of Responsive Design on User Engagement</h2>
+                    </div>
+                    <span class="post-date">March 7, 2025</span>
+                </div>
+                <div class="post-content">
+                    <p>Our recent analytics revealed a significant insight: websites with truly responsive designs see 37% higher engagement rates across all devices. This confirms what we've long suspected—responsive design isn't just about looking good on mobile; it directly impacts how users interact with your content.</p>
+                    <p>The key finding was that seamless transitions between devices led to longer session durations. Users who began browsing on mobile and later continued on desktop showed the highest completion rates for desired actions.</p>
+                    <p>To implement truly effective responsive design, focus on content priority rather than just resizing elements. Consider which content matters most to mobile users versus desktop users, and structure your responsive breakpoints accordingly.</p>
+                </div>
+            </div>
+            
+            <!-- Blog Post 3 -->
+            <div class="blog-post">
+                <div class="post-header">
+                    <div class="post-header-left">
+                        <span class="post-number">#003</span>
+                        <h2 class="post-title">Designing for Accessibility: Beyond the Basics</h2>
+                    </div>
+                    <span class="post-date">February 28, 2025</span>
+                </div>
+                <div class="post-content">
+                    <p>Accessibility in web design has evolved far beyond simple color contrast checks and alt text. Today, truly accessible design considers the full spectrum of user needs and creates experiences that work for everyone.</p>
+                    <p>Beyond the WCAG guidelines, consider these advanced accessibility approaches:</p>
+                    <p>Design with keyboard navigation in mind, ensuring all interactive elements are accessible without a mouse. Implement reduced motion options for users with vestibular disorders. And perhaps most importantly, test your designs with real users who have disabilities.</p>
+                    <p>Remember that accessible design ultimately benefits all users, not just those with disabilities. Clear navigation, readable text, and intuitive interfaces create better experiences for everyone.</p>
+                </div>
+            </div>
+            
+            <!-- Add new blog posts here by copying the blog-post div structure -->
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
