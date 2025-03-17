@@ -227,14 +227,14 @@ h1 {
         }
 
         /* Blog list specific styles */
-        .blog-list-container {
+        .blog-list-container-specific {
             max-width: 900px;
             width: 100%;
             margin: 0 auto;
             padding: 20px 0;
         }
         
-        .blog-list-title {
+        .blog-list-title-specific {
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 40px;
@@ -242,11 +242,11 @@ h1 {
             letter-spacing: -1px;
         }
         
-        .blog-category {
+        .blog-category-specific {
             margin-bottom: 50px;
         }
         
-        .category-title {
+        .category-title-specific {
             font-size: 1.8rem;
             font-weight: 600;
             margin-bottom: 20px;
@@ -255,11 +255,11 @@ h1 {
             border-bottom: 1px solid #e5e5e7;
         }
         
-        .blog-list {
+        .blog-list-specific {
             list-style: none;
         }
         
-        .blog-item {
+        .blog-item-specific {
             background-color: #fff;
             border-radius: 12px;
             margin-bottom: 15px;
@@ -267,12 +267,12 @@ h1 {
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
         
-        .blog-item:hover {
+        .blog-item-specific:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
         
-        .blog-item a {
+        .blog-item-specific a {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -281,12 +281,12 @@ h1 {
             color: inherit;
         }
         
-        .blog-item-left {
+        .blog-item-left-specific {
             display: flex;
             align-items: center;
         }
         
-        .blog-number {
+        .blog-number-specific {
             font-size: 0.9rem;
             font-weight: 600;
             color: #007aff;
@@ -294,13 +294,13 @@ h1 {
             min-width: 45px;
         }
         
-        .blog-title {
+        .blog-list-title-specific {
             font-size: 1.1rem;
             font-weight: 500;
             color: #1d1d1f;
         }
         
-        .blog-date {
+        .blog-date-specific {
             font-size: 0.9rem;
             color: #86868b;
             margin-left: 20px;
@@ -372,5 +372,24 @@ h1 {
     
     .feature-image img {
         height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-list-container-specific {
+        padding: 20px;
+    }
+    
+    .blog-item-specific a {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .blog-item-left-specific {
+        margin-bottom: 8px;
+    }
+    
+    .blog-date-specific {
+        margin-left: 0;
     }
 }
