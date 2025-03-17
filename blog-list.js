@@ -18,7 +18,7 @@ const blogData = {
             title: "Designing for Accessibility: Beyond the Basics",
             date: "February 28, 2025",
             link: "blog.html#post-003"
-        }
+        },
         {
             number: "004",
             title: "Et plus si affinité: et Hop !",
