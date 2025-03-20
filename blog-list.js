@@ -79,16 +79,16 @@ function generateBlogList(category, containerId) {
     // Generate list items
     blogs.forEach(blog => {
         const listItem = document.createElement('li');
-        listItem.className = 'blog-item-specific';
+        listItem.className = 'blog-item';
         listItem.id = `${category}-${blog.number}`;
         
         listItem.innerHTML = `
             <a href="${blog.link}">
-                <div class="blog-item-left-specific">
-                    <span class="blog-number-specific">#${blog.number}</span>
-                    <span class="blog-title-specific">${blog.title}</span>
+                <div class="blog-item-left">
+                    <span class="blog-number">#${blog.number}</span>
+                    <span class="blog-title">${blog.title}</span>
                 </div>
-                <span class="blog-date-specific">${blog.date}</span>
+                <span class="blog-date">${blog.date}</span>
             </a>
         `;
         

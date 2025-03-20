@@ -37,9 +37,12 @@ nav {
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: -1px;
+    font-family: "Apple Chancery", "Brush Script MT", "Comic Sans MS", cursive;
+    font-size: 4rem;        /* Prominent but not overwhelming */
+    font-weight: 400;         /* Apple Chancery is inherently stylish; no bold needed */
+    letter-spacing: 1px;      /* Slight spacing for improved readability */
+    color: #333;              /* Dark grey for a refined, non-harsh look */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);  /* Soft shadow for depth */
 }
 
 .nav-toggle {
@@ -155,171 +158,6 @@ h1 {
     color: #555;
     line-height: 1.5;
 }
-
-        /* Blog-specific styles */
-        .blog-container {
-            max-width: 800px;
-            width: 100%;
-            margin: 0 auto;
-            padding: 20px 0;
-        }
-        
-        .blog-title {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 40px;
-            text-align: center;
-            letter-spacing: -1px;
-        }
-        
-        .blog-post {
-            margin-bottom: 50px;
-            background-color: #fff;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-        }
-        
-        .post-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 24px;
-            background-color: #f5f5f7;
-            border-bottom: 1px solid #e5e5e7;
-        }
-        
-        .post-header-left {
-            display: flex;
-            align-items: center;
-        }
-        
-        .post-number {
-            font-size: 1rem;
-            font-weight: 600;
-            color: #007aff;
-            margin-right: 15px;
-        }
-        
-        .post-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #1d1d1f;
-        }
-        
-        .post-date {
-            font-size: 0.9rem;
-            color: #86868b;
-        }
-        
-        .post-content {
-            padding: 24px;
-            line-height: 1.6;
-            color: #333;
-        }
-        
-        .post-content p {
-            margin-bottom: 16px;
-        }
-        
-        .post-content p:last-child {
-            margin-bottom: 0;
-        }
-
-        /* Blog list specific styles */
-        .blog-list-container-specific {
-            max-width: 900px;
-            width: 100%;
-            margin: 0 auto;
-            padding: 20px 0;
-        }
-        
-        .blog-list-title-specific {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 40px;
-            text-align: center;
-            letter-spacing: -1px;
-        }
-        
-        .blog-category-specific {
-            margin-bottom: 50px;
-        }
-        
-        .category-title-specific {
-            font-size: 1.8rem;
-            font-weight: 600;
-            margin-bottom: 20px;
-            color: #1d1d1f;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #e5e5e7;
-        }
-        
-        .blog-list-specific {
-            list-style: none;
-        }
-        
-        .blog-item-specific {
-            background-color: #fff;
-            border-radius: 12px;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        
-        .blog-item-specific:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-        
-        .blog-item-specific a {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 18px 24px;
-            text-decoration: none;
-            color: inherit;
-        }
-        
-        .blog-item-left-specific {
-            display: flex;
-            align-items: center;
-        }
-        
-        .blog-number-specific {
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: #007aff;
-            margin-right: 15px;
-            min-width: 45px;
-        }
-        
-        .blog-title-specific {
-            font-size: 1.1rem;
-            font-weight: 500;
-            color: #1d1d1f;
-        }
-        
-        .blog-date-specific {
-            font-size: 0.9rem;
-            color: #86868b;
-            margin-left: 20px;
-        }
-
-        @media (max-width: 768px) {
-            .blog-container {
-                padding: 20px;
-            }
-            
-            .post-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            
-            .post-date {
-                margin-top: 10px;
-            }
-        }
         
 @media (max-width: 768px) {
     h1 {
@@ -375,21 +213,3 @@ h1 {
     }
 }
 
-@media (max-width: 768px) {
-    .blog-list-container-specific {
-        padding: 20px;
-    }
-    
-    .blog-item-specific a {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .blog-item-left-specific {
-        margin-bottom: 8px;
-    }
-    
-    .blog-date-specific {
-        margin-left: 0;
-    }
-}
