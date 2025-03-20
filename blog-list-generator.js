@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const blogListContainer = document.getElementById('blog-list-container');
 
     for (const file of blogFiles) {
+        alert(file);
         const response = await fetch(file);
         const htmlText = await response.text();
 
