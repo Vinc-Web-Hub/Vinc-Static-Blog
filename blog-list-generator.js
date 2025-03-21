@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     const blogListContainer = document.getElementById('blog-list-container');
 
     for (const file of blogFiles) {
-        alert(file);
         const response = await fetch(file);
         const htmlText = await response.text();
 
@@ -25,11 +24,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             postLink.href = `${file}#${post.id}`;
             postLink.classList.add('post-panel');
             postLink.innerHTML = `
-                <div>
-                    <span>${postNumber}</span>
-                    <h3>${postTitle}</h3>
-                    <span>${postDate}</span>
-                </div>`;
+                <div class="post-panel-left">
+                    <span class="post-number">${postNumber}</span>
+                    <span class="post-title">${postTitle}</span>
+                </div>
+                <span class="post-date">${postDate}</span>`;
 
             blogSection.appendChild(postLink);
         });
