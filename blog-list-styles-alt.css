@@ -13,6 +13,7 @@
 }
 .blog-section {
     margin-bottom: 20px;
+    padding: 15px;
 }
 .post-panel {
     background-color: #fff;
@@ -83,31 +84,46 @@
 */
 
 @media (max-width: 768px) {
+    .blog-section {
+        padding: 15px;
+        margin: 15px 0;
+    }
+
     .post-panel {
-        padding: 8px 12px;
+        padding: 12px 15px;  /* Increased padding for better spacing */
     }
 
     .post-panel-content {
         display: flex;
         flex-direction: column;
         align-items: flex-start; /* Align everything to the left */
-        gap: 3px;
+        gap: 6px; /* More spacing for readability */
     }
 
     .post-panel-left {
         display: flex;
         gap: 8px; /* Space between number and title */
+        width: 100%; /* Ensures both align to the left */
     }
 
-    .post-number,
+    .post-number {
+        min-width: 50px; /* Ensures number and date align correctly */
+        text-align: left;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
     .post-title {
-        font-size: 1rem;  /* Balanced text size */
+        font-size: 1rem;
+        flex-grow: 1; /* Ensures the title naturally aligns next to the number */
     }
 
     .post-date {
+        padding-left: 0; /* Align date directly under post number */
         font-size: 0.9rem;
         color: #888;
     }
 }
+
 
 
