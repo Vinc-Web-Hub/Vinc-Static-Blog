@@ -74,41 +74,33 @@
     }
 }
 */
-@media (max-width: 768px) {
-    .blog-section {
-        padding: 10px;
-        margin: 10px 0;
-    }
 
+@media (max-width: 768px) {
     .post-panel {
         padding: 8px 12px;
-        flex-direction: column; /* Stack content vertically */
-        text-align: left;
     }
 
     .post-panel-content {
-        flex-direction: column; /* Stack items vertically */
-        align-items: flex-start; /* Align text to the left */
-        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align everything to the left */
+        gap: 3px;
     }
 
     .post-panel-left {
-        flex-direction: column; /* Stack post-number and post-title */
-        gap: 2px;
+        display: flex;
+        gap: 8px; /* Space between number and title */
     }
 
-    .post-number {
-        font-size: 0.9rem;  /* Slightly smaller text for better fit */
-    }
-
+    .post-number,
     .post-title {
-        font-size: 1rem; /* Maintain readability */
+        font-size: 1rem;  /* Balanced text size */
     }
 
     .post-date {
-        align-self: flex-end; /* Align date at the bottom-right */
         font-size: 0.9rem;
         color: #888;
     }
 }
+
 
