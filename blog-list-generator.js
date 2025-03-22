@@ -24,11 +24,13 @@ document.addEventListener('DOMContentLoaded', async () => {
             postLink.href = `${file}#${post.id}`;
             postLink.classList.add('post-panel');
             postLink.innerHTML = `
-                <div class="post-panel-left">
+                <div class="post-panel-content">    
+                    <div class="post-panel-left">
                     <span class="post-number">${postNumber}</span>
                     <span class="post-title">${postTitle}</span>
-                </div>
-                <span class="post-date">${postDate}</span>`;
+                    </div>
+                    <span class="post-date">${postDate}</span>
+                </div>';
 
             blogSection.appendChild(postLink);
         });
