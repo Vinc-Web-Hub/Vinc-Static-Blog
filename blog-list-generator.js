@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const blogTitle = doc.querySelector('.blog-title').textContent;
         const blogSection = document.createElement('div');
         blogSection.classList.add('blog-section');
-        blogSection.innerHTML = `<h2>${blogTitle}</h2>`;
+        blogSection.innerHTML = `<h2 class="blog-title">${blogTitle}</h2>`;
 
         const posts = doc.querySelectorAll('.blog-post');
         posts.forEach(post => {

@@ -15,6 +15,16 @@
     margin-bottom: 20px;
     padding: 15px;
 }
+
+.blog-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #1d1d1f;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e7;
+}
+
 .post-panel {
     background-color: #fff;
     border-radius: 12px;
