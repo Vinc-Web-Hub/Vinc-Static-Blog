@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const blogFiles = ['blog-1.html', 'blog-2.html'];
     const blogListContainer = document.getElementById('blog-list-container');
+    blogListContainer.innerHTML = `<h1 class="blog-list-title">All Blog Posts</h1>`;
 
     for (const file of blogFiles) {
         const response = await fetch(file);
