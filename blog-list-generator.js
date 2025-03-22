@@ -26,11 +26,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             postLink.innerHTML = `
                 <div class="post-panel-content">    
                     <div class="post-panel-left">
-                    <span class="post-number">${postNumber}</span>
-                    <span class="post-title">${postTitle}</span>
+                        <span class="post-number">${postNumber}</span>
+                        <span class="post-title">${postTitle}</span>
                     </div>
                     <span class="post-date">${postDate}</span>
-                </div>';
+                </div>`;
 
             blogSection.appendChild(postLink);
         });
