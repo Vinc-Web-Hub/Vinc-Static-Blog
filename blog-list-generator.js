@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', async () => {
-    const blogFiles = ['blog-music.html', 'blog-science.html'];
+    const blogFiles = ['blog.html', 'blog-music.html', 'blog-science.html'];
     const blogListContainer = document.getElementById('blog-list-container');
     blogListContainer.innerHTML = `<h1 class="blog-list-title">All Blog Posts</h1>`;
 
