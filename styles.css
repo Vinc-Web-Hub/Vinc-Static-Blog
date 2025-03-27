@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url('background.jpg') center center/cover no-repeat fixed;
+    background: url('assets/background.jpg') center center/cover no-repeat fixed;
     color: #333;
     min-height: 100vh;
     position: relative;
